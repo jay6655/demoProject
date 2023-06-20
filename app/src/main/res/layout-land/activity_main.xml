@@ -29,11 +29,10 @@
 
     <ImageView
         android:id="@+id/img_home"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
-        android:background="@drawable/circle"
-        android:padding="@dimen/_5sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
         android:src="@drawable/ic_home"
+        android:background="@drawable/circle"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +42,7 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="50dp"
+        android:layout_marginHorizontal="80dp"
         android:background="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_home">
@@ -64,7 +63,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="50dp"
                 android:orientation="vertical">
 
@@ -88,7 +86,6 @@
                     android:textSize="11sp" />
 
                 <EditText
-                    android:id="@+id/edtEmailId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
@@ -122,7 +119,6 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="80dp"
@@ -131,28 +127,11 @@
         android:gravity="center"
         android:includeFontPadding="false"
         android:paddingVertical="8dp"
-        android:text="@string/login"
+        android:text="Landscape"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/view" />
-
-    <Button
-        android:id="@+id/buttonOpenGoogle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="80dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/bg_card"
-        android:gravity="center"
-        android:includeFontPadding="false"
-        android:paddingVertical="8dp"
-        android:text="Open Google"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

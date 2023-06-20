@@ -1,48 +1,32 @@
 package com.example.loginapplication
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import com.example.loginapplication.databinding.RegiPageActivityBinding
 
 class SecondActivity : AppCompatActivity() {
 
-    val TAG = "SecondActivity"
+    lateinit var binding: RegiPageActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actvity_second)
-        Log.e(TAG, "onCreate")
+        binding = RegiPageActivityBinding.inflate(layoutInflater)
+//        println("Second  :  Protected : $protectedValue")
+//        println("Second  :  Public : $value")
+
+//        var registerData =
+//            RegisterData(userName = "DEMO", email = "abc@gmail.com", password = "1234")
+
+//        registerData.userEmailId = ""
+//        println("UserName : ${registerData.userName}")
+//        println("Email : ${registerData.email}")
+//        println("Password : ${registerData.password}")
+
+
+        val emailId = intent.extras?.getString("EMAIL_ID")
+        val number  = intent.extras?.getInt("number")
+//        intent.extras.getBundle("")
+        println("Second Activity : Email Id: $emailId")
+        println("Second Activity : Number : $number")
     }
-
-    override fun onStart() {
-        super.onStart()
-        Log.e(TAG, "onStart")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.e(TAG, "onRestart")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e(TAG, "onResume")
-    }
-
-
-    override fun onPause() {
-        super.onPause()
-        Log.e(TAG, "onPause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.e(TAG, "onStop")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.e(TAG, "onDestroy")
-    }
-
 }
