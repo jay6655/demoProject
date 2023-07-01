@@ -21,7 +21,7 @@ open class MainActivity : AppCompatActivity(), DemoInterface, View.OnClickListen
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        println("Main  :  Protected : $protectedValue")
+        println("Main  :  njcfdj  : $protectedValue")
         println("Main  :  Public : $value")
         println("Main  :  Private : $privatedValue")
 
